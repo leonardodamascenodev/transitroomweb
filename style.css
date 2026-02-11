@@ -86,3 +86,19 @@
 .cadastro {
     color: white;
 }
+
+.rodape h3 {
+    color: white;
+    font-family: manrope;
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 320px;
+}
+
+.rodape {
+    border: 1px solid green;
+}
+
+.logo-rodape {
+    margin-right: 320px;
+}
