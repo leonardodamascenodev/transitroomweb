@@ -1,0 +1,88 @@
+.bg-primary {
+    background: #C2292F !important;
+}
+
+.space {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: manrope;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.login {
+    margin-bottom: 35px;
+    color: white;
+    font-family: manrope;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -2px;
+    position: relative;
+}
+
+.login label {
+    display: block;
+    margin-bottom: -20px;
+    background-color: white;
+    z-index: 3;
+    border: 1px solid white;
+}
+
+.login input {
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.dados {
+    display: block;
+    position: relative;
+    width: max-content;
+    margin-bottom: -30px;
+    background-color: #C2292F;
+    margin-left: 30px;
+}
+
+.button-login {
+    background: white;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: #C2292F;
+    font-family: manrope;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -2px;
+}
+
+.rodape {
+    display: flex;
+    height: 120px;
+    margin-top: 150px;
+    background-color: #C2292F;
+    width: 100%;
+}
+
+.cadastro input {
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.cadastro {
+    color: white;
+}
