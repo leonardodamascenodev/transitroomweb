@@ -95,6 +95,23 @@
     padding-left: 320px;
 }
 
+
 .logo-rodape {
     margin-right: 320px;
+}
+
+.button-cadastro {
+    background: #E8A726;
+    color: white;
+    font-size: 30px;
+    font-family: manrope;
+    font-weight: 500;
+    letter-spacing: -2px;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 25px;
 }
