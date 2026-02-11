@@ -115,3 +115,55 @@
     justify-content: center;
     margin-top: 25px;
 }
+
+.login-area {
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    background-color: #C2292F;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.login-area p {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    font-family: manrope;
+    font-weight: 500;
+    letter-spacing: -1px;
+    background-color: #C2292F;
+}
+
+.login-area img {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solicitacao {
+    background-color: #C2292F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.solicitar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
