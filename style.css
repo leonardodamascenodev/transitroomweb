@@ -155,15 +155,92 @@
     justify-content: center;
     flex-direction: column;
     color: white;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
-    margin-top: 15px;
-    margin-left: 15px;
 }
 
 .solicitar {
-    width: 100%;
+    width: min-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.confirmar {
+    border: none;
+    background-color: #E8A726;
+    width: 520px;
+    height: 80px;
+    color: white;
+    font-family: manrope;
+    font-weight: 800;
+    font-size: 40px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -2px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.painel {
+    display: flex;
+    gap: 200px;
+}
+
+.diario {
+    width: 700px;
+    height: 250px;
+    background-color: #E84624;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diario h1 {
+    font-family: manrope;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.diario p {
+    font-size: 30px;
+    font-family: manrope;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 1.2;
+}
+
+.botaopedido {
+    display: flex;
+    justify-content: center;
+}
+
+.botaopedido button {
+    border: 2px solid #E84624;
+    font-size: 40px;
+    padding: 30px;
+    width: 250px;
+    border-radius: 50px;
+    font-family: manrope;
+    font-weight: 800;
+    background-color: white;
+    letter-spacing: -2px;
+    color: #E84624;
+    margin-top: -50px;
+}
+
+.pedidos {
+    width: 700px;
+    height: 345px;
+    background-color: #E84624;
+    border-radius: 15px;
+    margin-top: -50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
