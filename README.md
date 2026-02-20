@@ -24,6 +24,12 @@ Tela de Login
 Tela de Cadastro
 <img width="1904" height="943" alt="image" src="https://github.com/user-attachments/assets/4f111f83-ad4c-4cfc-8270-f46ad6be1cee" />
 
+Área de Solicitação de Pedidos
+<img width="5760" height="4096" alt="Solicitação de Saída" src="https://github.com/user-attachments/assets/e9bcb2be-1691-4e68-b4b1-7c1e19650527" />
+
+Minha conta
+<img width="5760" height="4096" alt="Minha conta" src="https://github.com/user-attachments/assets/d44e8ede-d2a0-4263-8c48-afb4c380a64f" />
+
 ---
 <p align="center">
     Desenvolvido para a Sala de Devs 🚀
