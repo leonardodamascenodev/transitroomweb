@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="icon" type="image/svg+xml" href="Vector 1.svg" sizes="any">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>TransitRoom - Minha Conta</title>
+
+    <style>
+        /* Pequeno ajuste para indicar que os botões são clicáveis */
+        .alterar,
+        .alterarsenha {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .alterar:hover,
+        .alterarsenha:hover {
+            transform: scale(1.02);
+            /* Efeito suave ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav w-full justify-content-between border border-3 p-2 px-5 py-3 rounded-4 mt-5 align-items-center"
+                style="width: 100%; border-color:#C2292F !important;">
+                <div class="logo gap-3 d-flex align-items-center">
+                    <img src="Logo.png" alt="" style="width: 40px; height: 40px;" class="img-fluid">
+
+                    <h1 style="font-family: Manrope; font-weight: 700; letter-spacing: -2px; color: #C2292F;"
+                        class=" mb-0">TransitRoom</h1>
+                </div>
+                <div class="d-flex items-center px-3 gap-3">
+                    <a href="areadoaluno.html">
+                        <button class="btn text-white bg-primary space" style="border: none;">Voltar</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container perfil">
+        <div class="col-lg-10">
+            <h1
+                style="font-family: manrope; font-weight: 800; color: #E8A726; letter-spacing: -2px; margin-top: 50px; font-size: 50px;">
+                Minha conta</h1>
+
+            <div class="nome">
+                <img id="imgPerfil" src="unnamed.jpg" alt="" height="80px" width="80px"
+                    style="border: 1px solid #C2292F; border-radius: 50%; object-fit: cover;">
+                <h1>Meu nome: <span id="nomeUsuario">Carregando...</span></h1>
+            </div>
+        </div>
+
+        <div class="col-lg-2" style="margin-top: 100px;">
+            <h1
+                style="font-family: manrope; font-weight: 800; color: #E84624; letter-spacing: -2px; margin-top: 50px; font-size: 30px;">
+                Série: <span id="turmaUsuario">...</span>
+            </h1>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<div class="container opcoes">
+    <div class="col-lg-5">
+        <div class="numeropedido">
+            <h1>Número total de <br> pedidos</h1>
+            <div style="background-color: white; width: 100px; height: 100px; color: #E84624; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                <h1 style="margin: 0; font-size: 50px;">6</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 d-flex flex-column gap-3 mt-5"> <div class="alterar" id="btnAlterarFoto" style="margin-top: 0;"> <span class="material-symbols-outlined" style="font-size: 40px; color: white;">account_circle</span>
+            <h1>Alterar avatar</h1>
+        </div>
+        
+        <div class="alterarsenha" id="btnModalSenha" data-bs-toggle="modal" data-bs-target="#modalSenha" style="margin-top: 0;">
+            <span class="material-symbols-outlined" style="font-size: 40px; color: white;">key</span>
+            <h1>Alterar senha</h1>
+        </div>
+
+        <div class="sair" id="btnSair">
+            <span class="material-symbols-outlined" style="font-size: 40px; color: white;">logout</span>
+            <h1>Sair da conta</h1>
+        </div>
+
+        <div class="excluir" id="btnExcluir">
+            <span class="material-symbols-outlined" style="font-size: 40px; color: white;">delete_forever</span>
+            <h1>Excluir conta</h1>
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade" id="modalSenha" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: #C2292F;">Alterar Senha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Senha Atual</label>
+                        <input type="password" id="senhaAtualInput" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nova Senha</label>
+                        <input type="password" id="novaSenhaInput" class="form-control"
+                            placeholder="Mínimo 6 caracteres">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Confirmar Nova Senha</label>
+                        <input type="password" id="confirmaSenhaInput" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" id="btnSalvarSenha" class="btn text-white"
+                        style="background-color: #C2292F;">Salvar Nova Senha</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="inputArquivo" accept="image/*" style="display: none;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        
+        // --- 1. CARREGAR DADOS ---
+        const usuarioJSON = localStorage.getItem("usuarioCadastrado");
+        let usuario = usuarioJSON ? JSON.parse(usuarioJSON) : null;
+
+        if (!usuario) {
+            // Se não tiver usuário logado, mostra dados falsos ou redireciona
+            // window.location.href = "index.html"; 
+            usuario = { nome: "Visitante", turma: "-", foto: "" }; // Mock para visualização
+        }
+
+        // Preenche HTML
+        if(document.getElementById("nomeUsuario")) document.getElementById("nomeUsuario").innerText = usuario.nome;
+        if(document.getElementById("turmaUsuario")) document.getElementById("turmaUsuario").innerText = usuario.turma;
+        
+        // Carrega foto
+        const imgPerfil = document.getElementById("imgPerfil");
+        if (usuario.foto && imgPerfil) {
+            imgPerfil.src = usuario.foto;
+        }
+
+        // --- 2. LÓGICA DE FOTO ---
+        const btnFoto = document.getElementById("btnAlterarFoto");
+        const inputArquivo = document.getElementById("inputArquivo"); // Lembre de ter o <input type="file" id="inputArquivo" style="display:none"> no HTML
+
+        if (btnFoto && inputArquivo) {
+            btnFoto.addEventListener("click", () => inputArquivo.click());
+            
+            inputArquivo.addEventListener("change", function() {
+                if (this.files && this.files[0]) {
+                    const leitor = new FileReader();
+                    leitor.onload = function(e) {
+                        imgPerfil.src = e.target.result;
+                        if(usuarioJSON) {
+                            usuario.foto = e.target.result;
+                            localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario));
+                            alert("Foto atualizada!");
+                        }
+                    }
+                    leitor.readAsDataURL(this.files[0]);
+                }
+            });
+        }
+
+        // --- 3. LÓGICA DE SENHA ---
+        const btnSalvarSenha = document.getElementById("btnSalvarSenha");
+        if(btnSalvarSenha) {
+            btnSalvarSenha.addEventListener("click", () => {
+                const atual = document.getElementById("senhaAtualInput").value;
+                const nova = document.getElementById("novaSenhaInput").value;
+                const confirma = document.getElementById("confirmaSenhaInput").value;
+
+                if(atual !== usuario.senha) return alert("Senha atual errada!");
+                if(nova !== confirma) return alert("Senhas não batem!");
+                
+                usuario.senha = nova;
+                localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario));
+                alert("Senha alterada!");
+                location.reload();
+            });
+        }
+
+        // --- 4. LÓGICA DE SAIR (LOGOUT) ---
+        const btnSair = document.getElementById("btnSair");
+        if (btnSair) {
+            btnSair.addEventListener("click", () => {
+                if(confirm("Deseja realmente sair da sua conta?")) {
+                    // Opcional: localStorage.removeItem("usuarioCadastrado"); // Se quiser apagar os dados ao sair
+                    window.location.href = "index.html"; // Manda para o login
+                }
+            });
+        }
+
+        // --- 5. LÓGICA DE EXCLUIR CONTA (PERIGO) ---
+        const btnExcluir = document.getElementById("btnExcluir");
+        if (btnExcluir) {
+            btnExcluir.addEventListener("click", () => {
+                const confirmacao = confirm("ATENÇÃO: Isso apagará sua conta e todos os seus dados permanentemente. Tem certeza?");
+                
+                if (confirmacao) {
+                    const confirmacaoDupla = confirm("Última chance: Deseja mesmo excluir tudo?");
+                    
+                    if (confirmacaoDupla) {
+                        // Apaga tudo do navegador
+                        localStorage.removeItem("usuarioCadastrado");
+                        alert("Sua conta foi excluída. Você será redirecionado.");
+                        window.location.href = "index.html";
+                    }
+                }
+            });
+        }
+
+    });
+</script>
+</body>
+
+</html>
