@@ -13,6 +13,7 @@ Sendo um projeto estático, você pode acessá-lo facilmente:
 
 1.  Clone o repositório ou baixe o arquivo ZIP.
 2.  Abra o arquivo `index.html` no seu navegador de preferência.
+3.  Abra pelo https://transitroomweb.vercel.app/
 
 ---
 <p align="center">
